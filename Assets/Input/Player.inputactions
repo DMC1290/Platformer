@@ -1,0 +1,138 @@
+{
+    "name": "Player",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "ff9d81a9-b505-45d7-99ed-5008afbd8db5",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "27d494c0-6115-4cab-9cad-9138f5cdbe40",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Walk",
+                    "type": "Value",
+                    "id": "a9bb14af-0863-48f4-afcb-dd54f3030d38",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "eae6e8a6-5822-4391-ba0f-edb6b51db54e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Squat",
+                    "type": "Button",
+                    "id": "9c8e1207-043a-47ed-85e2-5371258745b7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e59265ab-0e74-409d-a821-cc76ecebee54",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d97475b6-79f9-4cea-9abd-daee0207a6bc",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0000906-2ec8-4bc6-9b52-5930d737af9d",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1273475-7406-4dd1-b078-43d01c954604",
+                    "path": "<DualShockGamepad>/leftStick/right",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5125dad6-4a4c-4059-910e-2e60b4f8eb57",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be915903-5895-4bd2-8104-78c61d59c324",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0f07a65-defa-4ad4-999f-1bbdfa532c14",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Squat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0413d89a-3bce-404c-8b31-8b1ed78ceee8",
+                    "path": "<DualShockGamepad>/leftStick/down",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Squat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
