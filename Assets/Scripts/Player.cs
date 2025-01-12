@@ -5,10 +5,10 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _jumpForce = 10f;
-    [SerializeField] private float _runForce = 5f;
+    [SerializeField] private float _walkForce = 5f;
     [SerializeField] ContactDetector _isGrounded;
 
-      public UnityEvent finish;
+    public UnityEvent finish;
       
     private Rigidbody2D _rb;
 
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
             _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
 
-        _rb.linearVelocityX = _horizontalInput * _runForce;
+        _rb.linearVelocityX = _horizontalInput * _walkForce;
     }
 
     public void OnJump(InputValue value)
@@ -53,10 +53,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnRun(InputAction.CallbackContext context)
+    public void OnWalk(InputAction.CallbackContext context)
     {
         _horizontalInput = context.ReadValue<float>();
-        // Debug.Log("On Run : " + _horizontalInput);
+        Debug.Log("On Run : " + _horizontalInput);
     }
     private void OnCollisionEnter(Collision other)
     {

@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ContactDetector : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private bool _contactDetected = false;
+
+    public bool ContactDetected => _contactDetected;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Contacts")) _contactDetected = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Contacts")) _contactDetected = false;
     }
 }
